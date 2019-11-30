@@ -1,0 +1,31 @@
+Author: Emmanuel Garcia
+Panther ID: 6228656
+*This program is written in Java version 8, Update 111 (build 1.8.0_111-b14)*
+
+HOW TO USE:
+The test class tests the accounting formatter, the base formatter, and the decimal separator. The base formatter tests the case for all bases 2 through 32,
+from 0 to 24.
+
+SAMPLE INPUT:
+-23
+1000000
+20
+24
+
+SAMPLE OUTPUT:
+(23)
+1,000,000
+Decimal: 20
+Binary: 10100
+Hex: 18
+
+Abstract:
+This program provides three classes that implement the NumberFormatter interface. Base formatter that converts the number to the base specified by the constructor,
+the accounting formatter that places negative numbers in parenthesis, and the decimal separator which adds commas when the numbers exceed 10^3 and above. The algorithm used by
+the base converter uses the division with remainder method. Three examples are provided on the attached PDF.
+
+Data structure used:
+Arrays for splitting the strings into char arrays and vice versa.
+
+
+
